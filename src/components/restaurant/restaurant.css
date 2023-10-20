@@ -1,0 +1,31 @@
+body{
+    background: rgb(227, 208, 208);
+}
+.restaurant-navbar{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.restaurant-navbar .btn-group {
+    background-color: #fff;
+    padding: 10px 100px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.restaurant-navbar .btn-group .btn-group--item{
+    padding: 10px 20px;
+    background-color: inherit;
+    border: none;
+    margin-left: 5px;
+    color: rgb(76, 35, 116);
+    font-weight: 600;
+    font-size: 20px;
+}
+.restaurant-navbar .btn-group .btn-group--item:hover{
+    border-bottom: 2px solid blueviolet;
+    
+}
