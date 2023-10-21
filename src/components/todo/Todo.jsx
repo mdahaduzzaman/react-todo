@@ -23,10 +23,8 @@ const Todo = () => {
     
     // add todo 
     const addItem = ()=>{
-        console.log("item added")
         // if item is already exist then update the corresponding entry
         if (editIndex && todoList) {
-            console.log("item updated");
             const updatedList = todoList.map((curElem) => {
                 if (curElem.id === editIndex) {
                     return { ...curElem, name: inputValue };
@@ -61,7 +59,7 @@ const Todo = () => {
     
         // Update the state with the filtered array
         setTodoList(newList);
-        
+
         // Store the string in localStorage under a specific key
         localStorage.setItem('mytodo', JSON.stringify(newList));
     }
@@ -92,7 +90,7 @@ const Todo = () => {
                 </div>
                 <div className="todo-input">
                     <input type="text" placeholder='✍ Enter todo..' value={inputValue} onChange={(event)=>{setInputValue(event.target.value)}}/>
-                    <button type='submit' onClick={addItem}>{console.log(editIcon)}
+                    <button type='submit' onClick={addItem}>
                         {
                             editIcon ? 
                             (
